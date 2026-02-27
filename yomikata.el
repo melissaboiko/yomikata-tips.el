@@ -27,19 +27,21 @@
 ;;
 ;; Note that unidic-mecab is several gigabytes in size.
 ;;
-;; The annotations are saved in package-specific overlays. To clear
+;; The annotations are saved in package-specific overlays.  To clear
 ;; them, use `yomikata-clear-tooltips-region' or
 ;; `yomikata-clear-tooltips-buffer'.
 ;;
 ;; Annotated text is underlined by default.  To change this, customize
 ;; `yomikata-tooltip-available-face'.
 ;;
-;; The furigana generation is 100% offline, open source, and
-;; deterministic.  No LLMs or so-called “generative AI” are used at
-;; any point.  Automatic furigana generation is imperfect and may make
-;; mistakes, but the mistakes are consistent and predictable.  No coal
-;; plants had to be built to train the datafiles used by this
-;; software.
+;;
+;; Automatic morphological analysis and reading inference are
+;; imperfect processes and may make errors.  This software is
+;; deterministic, and its errors are consistent and predictable.  The
+;; inference is 100% offline, open source, and private.  No LLMs or
+;; so-called “generative AI” are used at any point.  None of your
+;; data is sent anywhere or used to train anything.  No coal plants
+;; had to be built to train datafiles used by this software.
 ;;
 ;; This software currently doesn't understand Japanese words broken
 ;; between lines.  You might want to use soft line breaks for longer
@@ -264,7 +266,7 @@ FUNC will be called with arguments: (token-start token-end reading)."
   (yomikata-region (point-min) (point-max)))
 
 (defun yomikata--find-overlay-at (pos)
-  "Return furigana overlay at POS if it was already set, otherwise nil."
+  "Return kanji reading overlay at POS if it was already set, otherwise nil."
   (cl-find-if (lambda (ov) (overlay-get ov 'yomikata))
               (overlays-at pos)))
 

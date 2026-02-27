@@ -11,7 +11,7 @@ You need MECAB installed with the Unidic dictionary (alternative
 dictionaries are planned but not yet supported).  On Debian you can
 get them with:
 
-   apt install mecab unidic-mecab
+    apt install mecab unidic-mecab
 
 Note that unidic-mecab is several gigabytes in size.
 
@@ -39,12 +39,12 @@ package-specific text overlay.
 ## Disclaimer
 
 Automatic morphological analysis and reading inference are imperfect
-processes and may make errors.  This software is deterministic and the
-errors are consistent and predictable.  The furigana generation is
-100% offline, open source, and private.  No LLMs or so-called
-“generative AI” are used at any point.  None of your data is sent
-anywhere or used to train anything.  No coal plants had to be built to
-train the datafiles used by this software.
+processes and may make errors.  This software is deterministic, and
+its errors are consistent and predictable.  The inference is 100%
+offline, open source, and private.  No LLMs or so-called “generative
+AI” are used at any point.  None of your data is sent anywhere or
+used to train anything.  No coal plants had to be built to train
+datafiles used by this software.
 
 ## Bugs
 
