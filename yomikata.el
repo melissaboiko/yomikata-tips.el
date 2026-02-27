@@ -278,7 +278,10 @@ FUNC will be called with arguments: (token-start token-end reading)."
       (overlay-get overlay 'help-echo))))
 
 (defun yomikata-at-point nil
-  "Run analysis on current line if needed, then return kanji reading at point."
+  "Display reading of kanji at point in minibuffer.
+
+If the text at point hasn't been tokenised and annotated yet, this will run
+MECAB on the current line first."
   (interactive)
   (let ((previous-overlay (yomikata--find-overlay-at (point))))
     (if previous-overlay
