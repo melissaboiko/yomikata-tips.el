@@ -6,7 +6,7 @@
 ;; Keywords: i18n mouse text
 ;; Package-Version: 0.1
 ;; Package-Requires: ((emacs "29.1"))
-;; URL: https://example.com
+;; URL: https://github.com/melissaboiko/yomikata-tips.el
 ;; License: AGPL 3
 
 ;;; Commentary:
