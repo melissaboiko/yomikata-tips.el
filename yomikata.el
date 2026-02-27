@@ -1,4 +1,4 @@
-;;; yomikata.el --- Annotates text with furigana tooltips -*- lexical-binding: t; -*-
+;;; yomikata.el --- Annotates Japanese text with reading tooltips -*- lexical-binding: t; -*-
 
 ;; Copyleft 🄯 2026 Melissa Boiko
 
@@ -11,13 +11,12 @@
 
 ;;; Commentary:
 
-;; This packages uses MECAB-Unidic to analyse Japanese text and
-;; automatically generate furigana to kanji.
+;; This packages uses MECAB-Unidic to automatically generate readings
+;; for kanji in an Emacs buffer.
 ;;
-;; To annotate the text, run `yomikata-region',
-;; `yomikata-buffer', or `yomikata-at-point'.  The
-;; furigana will be set as standard Emacs tooltips.  You can see them
-;; by hovering the mouse pointer, or by calling
+;; To annotate the text, run `yomikata-region', `yomikata-buffer', or
+;; `yomikata-at-point'.  The readings will be saved as help-echo text
+;; properties.  To see them, hover the mouse pointer, or by call
 ;; `yomikata-at-point' again at any word.
 ;;
 ;; You need MECAB installed with the Unidic dictionary (alternative
@@ -28,8 +27,8 @@
 ;;
 ;; Note that unidic-mecab is several gigabytes in size.
 ;;
-;; Furigana tooltips are saved as text overlays.  To clear them, use
-;; `yomikata-clear-tooltips-region' or
+;; The annotations are saved in package-specific overlays. To clear
+;; them, use `yomikata-clear-tooltips-region' or
 ;; `yomikata-clear-tooltips-buffer'.
 ;;
 ;; Annotated text is underlined by default.  To change this, customize
@@ -42,9 +41,10 @@
 ;; plants had to be built to train the datafiles used by this
 ;; software.
 ;;
-;; Roadmap:
-;; - Support more dictionary types than Unidic.
-;; - Modify text in-place to add HTML ruby tags or Markdown ruby.
+;; This software currently doesn't understand Japanese words broken
+;; between lines.  You might want to use soft line breaks for longer
+;; text.
+
 
 ;;; Code:
 
