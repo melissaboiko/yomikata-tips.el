@@ -18,23 +18,23 @@ Note that unidic-mecab is several gigabytes in size.
 ## Usage
 
 To analyse some text, run one of:
- - `yomikata-region',
- - `yomikata-buffer'
- - or `yomikata-at-point'.
+ - `yomikata-region`,
+ - `yomikata-buffer`
+ - or `yomikata-at-point`.
  
 The readings will be stored as standard Emacs tooltips.¹  You can see
-them by hovering the mouse pointer, or by calling `yomikata-at-point'
+them by hovering the mouse pointer, or by calling `yomikata-at-point`
 again at any word.
 
 To remove the annotations, use
-`yomikata-clear-tooltips-region' or
-`yomikata-clear-tooltips-buffer'.
+`yomikata-clear-tooltips-region` or
+`yomikata-clear-tooltips-buffer`.
 
 Annotated text is underlined by default.  To change this, customize
-`yomikata-tooltip-available-face'.
+`yomikata-tooltip-available-face`.
 
-1. Specifically they’re in the 'help-echo text property, in a
-   package-specific text overlay.
+1: Specifically they’re in the `'help-echo` text property, in a
+package-specific text overlay.
 
 ## Disclaimer
 
