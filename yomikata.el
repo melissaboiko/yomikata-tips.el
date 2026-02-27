@@ -180,7 +180,7 @@ internally only with the kana reading field of MECAB-Unidic."
 
 (defun yomikata--has-kanji-p (string)
   "True if STRING has at least one kanji character."
-  (seq-some 'yomikata--kanji-p string))
+  (seq-some #'yomikata--kanji-p string))
 
 (defun yomikata--mecab-parse-unidic-line (line)
   "Extract surface and kana-token fields from MECAB-Unidic output LINE.
