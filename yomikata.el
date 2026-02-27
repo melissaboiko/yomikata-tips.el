@@ -11,8 +11,9 @@
 
 ;;; Commentary:
 
-;; This packages uses MECAB-Unidic to automatically generate readings
-;; for kanji in an Emacs buffer.
+;; This packages annotates Japanese text in an Emacs buffer with
+;; readings for the kanji characters, using MECAB+Unidic (an external
+;; tool).
 ;;
 ;; To annotate the text, run `yomikata-region', `yomikata-buffer', or
 ;; `yomikata-at-point'.  The readings will be saved as help-echo text
