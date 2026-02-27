@@ -56,8 +56,8 @@ text.
 
  - Support more dictionary types than Unidic.
  - Modify text in-place to add HTML ruby tags or Markdown ruby.
-   - Requires 
- - A minor mode with default keybindings
+   - Requires breaking up the reading between furigana and okurigana.
+ - A minor mode with default keybindings.
  - Option to show readings in minibuffer when “hovering” with the
    keyboard cursor (this can be done with help-at-pt-set-timer, but
    it's annoying because it flashes every time you advance a
