@@ -2,12 +2,12 @@
 
 ;; Copyleft 🄯 2026 Melissa Boiko
 
-;; Author: Melissa Boiko
+;; Author: Melissa Boiko <melissa@namakajiri.net>
 ;; Keywords: i18n mouse text
 ;; Package-Version: 0.1
 ;; Package-Requires: ((emacs "29.1"))
 ;; URL: https://github.com/melissaboiko/yomikata-tips.el
-;; License: AGPL 3
+;; SPDX-License-Identifier: AGPL-3.0-or-later
 
 ;;; Commentary:
 
