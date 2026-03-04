@@ -16,11 +16,11 @@
 ;; tool).
 ;;
 ;; To annotate text, run `yomikata-region', `yomikata-buffer', or
-;; `yomikata-at-point'.  This will not put visible glosses
-;; (furigana/rubi) onto the buffer, but instead add them as
-;; interactive tooltips.  To see the reading of a kanji, hover the
-;; mouse pointer over it, or call `yomikata-at-point' again at any
-;; word.
+;; `yomikata-at-point'.  The text in the buffer won't be altered with
+;; visible glosses (furigana/rubi); instead, it will be enriched with
+;; interactive tooltips.  To see the reading of a kanji, either hover
+;; the mouse pointer over it, or put the text cursor on a word and
+;; call `yomikata-at-point' again.
 ;;
 ;; You will need MECAB installed with the Unidic dictionary
 ;; (alternative dictionaries are planned but not yet supported).
